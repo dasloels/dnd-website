@@ -1,28 +1,128 @@
-<!doctype html><html lang="de"><meta charset="utf-8">
+<!doctype html>
+<html lang="de">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Deutschland Neu Denken – Zukunft ist jetzt</title>
+<title>Deutschland Neu Denken</title>
+<link rel="icon" href="/favicon.ico">
+<meta name="description" content="Deutschland Neu Denken – Digital. Fair. Effizient. Zukunft ist jetzt.">
+
 <style>
-  :root{--blau:#0B2545;--orange:#F5A623;}
-  body{margin:0;font:16px/1.6 system-ui,Segoe UI,Roboto,Arial;background:#fff;color:var(--blau)}
-  .wrap{max-width:920px;margin:48px auto;padding:0 20px}
-  h1{font-size:42px;margin:0 0 6px}
-  h2{color:var(--orange);margin:0 0 24px}
-  .cta{display:inline-block;margin-top:18px;padding:12px 18px;border:2px solid var(--orange);color:var(--orange);text-decoration:none;border-radius:8px}
-  footer{margin:48px 0 16px;font-size:14px;color:#334}
-  .logo{font-weight:800;font-size:54px;letter-spacing:.5px}
-  .logo .n{color:var(--orange)}
+:root {
+  --orange:#f7931e;
+  --blue:#0b2545;
+  --light:#f8f9fa;
+}
+body {
+  margin:0;
+  font-family:system-ui,Arial,sans-serif;
+  color:#222;
+  background:var(--light);
+}
+header {
+  background:var(--blue);
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+header h1 {
+  margin:0;
+  font-size:2.2em;
+}
+header p {
+  margin-top:10px;
+  font-size:1.1em;
+  color:#ddd;
+}
+nav {
+  background:var(--orange);
+  text-align:center;
+  padding:10px;
+}
+nav a {
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:bold;
+}
+nav a:hover {text-decoration:underline;}
+section {
+  max-width:900px;
+  margin:60px auto;
+  padding:0 20px;
+}
+h2 {color:var(--blue);}
+footer {
+  background:#eee;
+  text-align:center;
+  padding:20px;
+  font-size:0.9em;
+}
+footer a {color:var(--blue);margin:0 8px;text-decoration:none;}
+footer a:hover{text-decoration:underline;}
+
+/* HERO + LOGO */
+.hero{display:flex;gap:28px;align-items:center;max-width:900px;margin:32px auto 12px;padding:0 20px}
+.hero img{width:76px;height:76px;object-fit:contain}
+.tag{display:inline-block;background:#fff1e0;color:var(--orange);border:1px solid var(--orange);
+     padding:6px 10px;border-radius:8px;font-weight:700;margin:8px 0}
+.lead{font-size:1.05em;color:#2a2a2a;margin:8px 0 0}
+.btn{display:inline-block;margin-top:14px;padding:12px 18px;border:2px solid var(--orange);
+     color:var(--orange);text-decoration:none;border-radius:10px;font-weight:700}
+.btn:hover{background:var(--orange);color:#fff}
+.contact{background:#fff;border:1px solid #eee;border-radius:12px;padding:18px;margin-top:24px}
+.contact b{color:var(--blue)}
 </style>
-<div class="wrap">
-  <div class="logo">D<span class="n">N</span>D</div>
+
+<header>
   <h1>Deutschland Neu Denken</h1>
-  <h2>Zukunft ist jetzt</h2>
-  <p>Digital. Fair. Effizient. Wir verbinden Bürgernähe mit Innovationskraft und setzen auf pragmatische Lösungen.</p>
-  <ul>
-    <li>Digitalisierung & Bürokratieabbau</li>
-    <li>Energie & Effizienz</li>
-    <li>Europa & Gerechtigkeit</li>
-  </ul>
-  <a class="cta" href="mailto:kontakt@deutschlandneudenken.com">Kontakt aufnehmen</a>
-  <footer>© Deutschland Neu Denken</footer>
+  <p>Zukunft ist jetzt.</p>
+</header>
+
+<nav>
+  <a href="#idee">Idee</a>
+  <a href="#ziele">Ziele</a>
+  <a href="#mitmachen">Mitmachen</a>
+  <a href="/impressum.html">Impressum</a>
+  <a href="/datenschutz.html">Datenschutz</a>
+</nav>
+
+<!-- HERO mit Logo + Claim -->
+<div class="hero">
+  <img src="/logo.png" alt="Deutschland Neu Denken Logo">
+  <div>
+    <h1 style="margin:0;color:var(--blue)">Deutschland Neu Denken</h1>
+    <div class="tag">Zukunft ist jetzt</div>
+    <p class="lead">Digital. Fair. Effizient. Pragmatismus statt Ideologie. Wir setzen auf
+      Technologie und Umsetzung, damit Deutschland wieder Tempo aufnimmt.</p>
+  </div>
 </div>
+
+<section id="idee">
+  <h2>Die Idee</h2>
+  <p>Deutschland Neu Denken steht für pragmatische, zukunftsorientierte Politik aus der Mitte der Gesellschaft. 
+     Keine Ideologien, sondern Lösungen – sozial, wirtschaftlich und ökologisch ausgewogen.</p>
+</section>
+
+<section id="ziele">
+  <h2>Unsere Ziele</h2>
+  <ul>
+    <li>Technologie nutzen, um Verwaltung, Energie und Bildung effizienter zu machen.</li>
+    <li>Regionale Wirtschaft stärken, anstatt immer neue Abhängigkeiten zu schaffen.</li>
+    <li>Mehr direkte Bürgerbeteiligung durch digitale Möglichkeiten.</li>
+  </ul>
+</section>
+
+<section id="mitmachen" class="contact">
+  <h2>Mach mit!</h2>
+  <p>Du willst mitdenken oder unterstützen? Schreib uns.</p>
+  <p><b>E-Mail:</b> <a href="mailto:kontakt@deutschlandneudenken.com">kontakt@deutschlandneudenken.com</a></p>
+  <a class="btn" href="mailto:kontakt@deutschlandneudenken.com">Kontakt aufnehmen</a>
+</section>
+
+<footer>
+  <a href="/impressum.html">Impressum</a> |
+  <a href="/datenschutz.html">Datenschutz</a> |
+  <span>© 2025 Deutschland Neu Denken</span>
+</footer>
+
 </html>
