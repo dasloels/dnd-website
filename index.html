@@ -151,6 +151,23 @@ form{margin-top:10px}
   margin-top:8px;
 }
 
+/* Über mich */
+.about{max-width:900px;margin:50px auto;padding:0 20px}
+.about-wrap{display:flex;gap:22px;align-items:flex-start}
+.about-wrap img{
+  width:130px;
+  height:130px;
+  border-radius:10px;
+  object-fit:cover;
+  border:2px solid #eee;
+}
+.about-wrap p{margin-top:0}
+.about-wrap ul{margin-top:10px;padding-left:20px}
+.about-wrap li{margin-bottom:6px}
+@media(max-width:700px){
+  .about-wrap{flex-direction:column;align-items:center;text-align:center}
+  .about-wrap img{margin-bottom:10px}
+}
 </style>
 
 <header>
@@ -162,6 +179,7 @@ form{margin-top:10px}
   <a href="#idee">Idee</a>
   <a href="#ziele">Ziele</a>
   <a href="#versprechen">Kernversprechen</a>
+  <a href="#ueber-mich">Über mich</a>
   <a href="#mitmachen">Mitmachen</a>
   <a href="/impressum.html">Impressum</a>
   <a href="/datenschutz.html">Datenschutz</a>
@@ -179,6 +197,28 @@ form{margin-top:10px}
     </p>
   </div>
 </div>
+
+<section id="ueber-mich" class="about">
+  <h2>Über mich</h2>
+  <div class="about-wrap">
+    <img src="/sven.jpg" alt="Sven – Deutschland Neu Denken">
+    <div>
+      <p>Ich bin Sven, 41 Jahre alt, Familienmensch, Vereinsmensch und leidenschaftlicher Praktiker.
+      Seit vielen Jahren arbeite ich als Führungskraft im Bereich Logistik, Lebensmittel und Energieeffizienz.
+      Ich komme nicht aus der Politik – und genau das ist meine Stärke.</p>
+
+      <p>Ich stehe für eine Politik der Mitte: pragmatisch, bodenständig und lösungsorientiert.
+      Ohne Ideologie, ohne unnötige Bürokratie – dafür mit gesundem Menschenverstand und klarem Fokus auf das,
+      was Deutschland wirklich voranbringt.</p>
+
+      <ul>
+        <li>20 Jahre Berufserfahrung in Führung, Organisation & Teamarbeit</li>
+        <li>Engagement im Sportverein (SV Ilmenau)</li>
+        <li>Praxis statt Theorie – immer 80/20-Prinzip</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
 <section id="idee">
   <h2>Die Idee</h2>
@@ -256,7 +296,6 @@ form{margin-top:10px}
     </p>
   </form>
 </section>
-
 
 <footer>
   <a href="/impressum.html">Impressum</a> |
